@@ -10,7 +10,12 @@ interface Props {
     className?: string;
 }
 
-const NoSSRinView = ({ children, fallback = null, rootMargin, className }: Props) => {
+const NoSSRinView = ({
+    children,
+    fallback = null,
+    rootMargin,
+    className,
+}: Props) => {
     const margin =
         rootMargin && /((((.\d*)?(px))){4})/.test(rootMargin)
             ? rootMargin
@@ -38,6 +43,3 @@ const NoSSRinView = ({ children, fallback = null, rootMargin, className }: Props
 };
 
 export default NoSSRinView;
-
-
-
