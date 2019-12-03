@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "config:base",
+    "schedule:earlyMondays"
+  ],
+  "automerge": true,
+  "major": {
+    "automerge": false
+  }
+}
