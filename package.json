@@ -1,12 +1,12 @@
 {
-  "name": "@mpth/react-no-ssr-in-view",
-  "version": "0.0.2",
+  "name": "@mpth/react-in-view",
+  "version": "0.0.3",
   "description": "React component to wrap non SSR components and only when it comes in our view.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maapteh/react-no-ssr-in-view.git"
+    "url": "git+https://github.com/maapteh/react-in-view.git"
   },
   "license": "MIT",
   "scripts": {
@@ -55,14 +55,15 @@
     "dist/**/*"
   ],
   "bugs": {
-    "url": "https://github.com/maapteh/react-no-ssr/issues"
+    "url": "https://github.com/maapteh/react-in-view/issues"
   },
-  "homepage": "https://github.com/maapteh/react-no-ssr#readme",
+  "homepage": "https://github.com/maapteh/react-in-viewr#readme",
   "keywords": [
     "react",
     "component",
-    "SSR",
-    "react-no-ssr"
+    "lazy",
+    "react-in-view",
+    "load when in view"
   ],
   "author": "MPTH"
 }

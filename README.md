@@ -1,13 +1,13 @@
-# @mpth/react-no-ssr-in-view
-> React component to wrap a non SSR component and only show it when it comes into our viewport, speeding up the eventloop while rendering pages SSR amd only truly load/show it when it comes into the users view. Works with React >= 16.5.0
+# @mpth/react-in-view
+> React component to wrap a non SSR component and only show it when it comes into our viewport, speeding up the eventloop while rendering pages SSR and only truly load/show it when it comes into the users view. Works with React >= 16.5.0
 
 When working with Server Side Rendering(SSR) enabled apps, you have to deal with client only components. This wrapper makes it simple to work with those components when you wanted to load data and or when the component comes into the view.
-[npmjs.com/package/@mpth/react-no-ssr-in-view](https://www.npmjs.com/package/@mpth/react-no-ssr-in-view)
+[npmjs.com/package/@mpth/react-in-view](https://www.npmjs.com/package/@mpth/react-in-view)
 
 ### Installation
 
 ```
-yarn add @mpth/react-no-ssr-in-view
+yarn add @mpth/react-in-view
 ```
 
 ### Usage
@@ -16,7 +16,7 @@ yarn add @mpth/react-no-ssr-in-view
 
 ```js
 import React from 'react';
-import NoSSR from '@mpth/react-no-ssr';
+import InView from '@mpth/react-in-view';
 import Foo from '../modules/foo';
 import Bar from '../modules/bar';
 
@@ -24,9 +24,9 @@ const Page = () => (
   <>
     <h1>Page</h1>
     <Bar />
-    <NoSSRinView>
+    <InView>
       <Foo />
-    </NoSSRinView>
+    </InView>
   </>
 );
 ```
@@ -48,9 +48,9 @@ const Loading = () => (<div>Loading...</div>);
 const Page = () => (
   <>
     ....
-    <NoSSRinView fallback={<Loading />}>
+    <InView fallback={<Loading />}>
       <Foo />
-    </NoSSRinView>
+    </InView2>
   </>
 );
 ```

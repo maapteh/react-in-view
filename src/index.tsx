@@ -10,7 +10,7 @@ interface Props {
     className?: string;
 }
 
-const NoSSRinView = ({
+const InView = ({
     children,
     fallback = null,
     rootMargin,
@@ -42,4 +42,4 @@ const NoSSRinView = ({
     );
 };
 
-export default NoSSRinView;
+export default InView;
