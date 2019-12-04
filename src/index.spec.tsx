@@ -42,6 +42,27 @@ describe('NoSSRinView Component', () => {
 
             expect(queryByText(/Hello/)).toBeDefined();
         });
+
+
+        it('should be able to set its own bounding box', () => {
+
+            const { queryByText, debug } = render(
+                <>
+                    <section style={{ ...style }}>above</section>
+                    <NoSSRinView rootMargin="40px 0px 400px 0px">
+                        <MyComp />
+                    </NoSSRinView>
+                    <section style={{ ...style }}>below</section>
+                </>
+            );
+            expect(queryByText(/Hello/)).toBeNull();
+
+            mockAllIsIntersecting(true)
+
+            expect(queryByText(/Hello/)).toBeDefined();
+        });
+
+        // TODO: add scroll test
     });
 
     describe('on Server Side', () => {
