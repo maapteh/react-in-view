@@ -63,5 +63,5 @@ Set of values serves to grow or shrink each side of the root element's bounding 
 ### ad 3. 
 Add your own css to the main container for example to set a min-height, or aspect ratio or preloading.
 
-[![Codecov Coverage](https://img.shields.io/codecov/c/github/maapteh/react-no-ssr-in-view/master.svg?style=flat-square)](https://codecov.io/gh/maapteh/react-no-ssr-in-view/)
+[![Codecov Coverage](https://img.shields.io/codecov/c/github/maapteh/react-in-view/master.svg?style=flat-square)](https://codecov.io/gh/maapteh/react-in-view/)
 
