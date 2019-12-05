@@ -1,7 +1,8 @@
 # @mpth/react-in-view
 > React component to wrap a non SSR component and only show it when it comes into our viewport, speeding up the eventloop while rendering pages SSR and only truly load/show it when it comes into the users view. Works with React >= 16.5.0
 
-When working with Server Side Rendering(SSR) enabled apps, you have to deal with client only components. This wrapper makes it simple to work with those components when you wanted to load data and or when the component comes into the view.
+When working with Server Side Rendering(SSR) enabled apps, you have to deal with client only components. This wrapper makes it simple to work with those components when you wanted to load data and or when the component comes into the view. Make sure you have 'react-intersection-observer' installed in your application.
+
 [npmjs.com/package/@mpth/react-in-view](https://www.npmjs.com/package/@mpth/react-in-view)
 
 ### Installation
@@ -9,6 +10,11 @@ When working with Server Side Rendering(SSR) enabled apps, you have to deal with
 ```
 yarn add @mpth/react-in-view
 ```
+
+### Online demonstration
+*Heroku container spins down when no activity, please be patient!*. See [graphql-schiphol.herokuapp.com](https://graphql-schiphol.herokuapp.com/lazy) for a live demonstration. I will add some storybook/codepen examples overhere too but this lazy example shows how it can be used.
+
+On [line 13](https://github.com/maapteh/graphql-modules-app/blob/master/packages/app/src/modules/App.tsx#L13) we added the intersection-observer polyfill for IE11. The code for the page itself comes from [lazy.js](https://github.com/maapteh/graphql-modules-app/blob/master/packages/app/src/pages/lazy.js). Now if you watch this page when its spinned up you can see the last two calls are being only made when the user scrolls to them.
 
 ### Usage
 
