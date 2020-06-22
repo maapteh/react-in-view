@@ -1,6 +1,6 @@
 {
     "name": "@mpth/react-in-view",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "React component to wrap non SSR components and only when it comes in our view.",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
